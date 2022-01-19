@@ -19,6 +19,7 @@ const AddUser = (props) => {
       console.log(`Failed validation step 2 (negative value)`);
       return;
     }
+    props.onAddUser(enteredUsername, enteredAge);
     console.log(enteredAge, enteredUsername);
     setEnteredUsername("");
     setEnteredAge("");
